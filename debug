@@ -1,0 +1,24 @@
+ # A opção debug deve ser inserida na linha que é informado o interpretador
+#	#!/bin/bash -x
+
+
+O script exemplo está propositalmente incorreto. A opção -x auxilía a encontrar o erro no script
+
+********************
+** Script exemplo **
+#!/bin/bash -x
+
+VAR1=1
+VAR2=2
+VAR3=$($VAR1+$VAR2)
+
+echo "A soma de $VAR1 e $VAR2: $VAR3"
+
+## Saída
++ VAR1=1
++ VAR2=2
+++ 1+2
+./teste.sh: line 5: 1+2: command not found
++ VAR3=
++ echo 'A soma de 1 e 2: '
+A soma de 1 e 2:
