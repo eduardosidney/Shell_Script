@@ -1,0 +1,6 @@
+# Criação de variáveis no Linux
+
+# Variáveis Globais
+EXPORT="conteudo da variavel"
+
+# Variaveis Locais
