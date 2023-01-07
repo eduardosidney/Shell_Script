@@ -1,0 +1,23 @@
+O awk possuiu muitas funcionalidades e opções.
+
+usamos para filtrar conteúdos, podendo ler até arquivos .csv
+
+Exemplo:
+filtrar retirar o conteúdo de um arquivo csv e inserir em um arquivo .awk que fará o papel de um padronizador, podendo ser enviado por e-mail, por exemplo
+
+#procurar o codigo no arquivo vendas.csv
+
+$ awk '/12345/' vendas.csv
+eduardo,12345,100.00
+
+# executando comando dentro do awk 
+#lendo a coluna 1, 2 e 3 (dentro do print)
+# entre aspas duplas "" deve-se colocar o separador
+
+$ awk -F "," '/12345/' {print $1,$2,$3} vendas.csv
+
+
+## Formatando com awk
+# o -f  é utilizado para executar um código.
+# nosso código será o codigo.awk
+awk -F "," -f codigo.awk vendas.csv
