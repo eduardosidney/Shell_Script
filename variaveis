@@ -3,5 +3,8 @@
 # Variáveis Globais
 EXPORT="conteudo da variavel"
 
-
 # Variaveis Locais
+NOME=eduardo
+
+#acessando a variavel
+echo $NOME
